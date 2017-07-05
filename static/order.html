@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>订单信息</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	
+	</head>
+
+	<body ontouchstar="">
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+	
+				<!-- 主页面标题 -->
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-pull-left mui-icon mui-icon-arrowleft back" href="javascript:history.go(-1);"></a>
+			<h1 class="mui-title">订单信息</h1>
+			<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#topPopover"></a>
+		</header>
+		
+		
+<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="index.html">
+				<span class="mui-icon iconfont icon-shouye-xianxing"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="list_pro.html">
+				<span class="mui-icon iconfont icon--guoji-xianxing"></span>
+				<span class="mui-tab-label">景点</span>
+			</a>
+			
+					<a class="mui-tab-item" href="contact.html">
+				<span class="mui-icon  iconfont icon-dianhua-xianxingyuankuang"></span>
+				<span class="mui-tab-label">咨询</span>
+			</a>
+		</nav>
+
+
+
+				<!-- 主页面内容容器 -->
+	<div class="mui-content">
+				
+						<!-- 主界面具体展示内容 -->
+				
+		
+		  	<form class="mui-input-group order" action="">
+		  		
+	
+			<div class="orderInfo">
+				
+<div class="head">
+<div class="orderName">郑州方特乐园成人票(通票全免费)，所有项目免费</div><div class="price"><span>￥210</span>/张</div>
+
+</div>
+<div class="head2">
+<div class="orderNotice">需要在游玩前一天21:00前预订，退款</div><a href="#" class="orderNotice_text">预订须知</a>
+
+</div>
+
+
+	         <div class="mui-input-row first">
+             		<label>游玩日期</label>
+							<input type="date" name="" value="2017-05-11" min="2017-05-11" max="2017-08-21"  />
+						</div>
+            
+						<div class="mui-input-row">
+							<label>购票数量</label>
+							<div class="mui-numbox" data-numbox-min='1' data-numbox-max='100'>
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" id="user_num" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+						</div>
+									
+				
+					   <div class="mui-input-row">
+             		<label>订单总额</label>
+							<div class="pay_price">￥<span id="result">210</span></div>
+						</div>
+            
+
+</div>
+				
+
+		  		
+		  		<div class="userInfo">
+
+
+						
+						
+             	<div class="mui-input-row first">
+             		<label>联&nbsp;系&nbsp;人</label>
+							<input type="text" class="mui-input-clear" name="" required placeholder="只需填写一位客人姓名" />
+						</div>
+						<div class="mui-input-row">
+							<label>电话号码</label>
+							<input type="tel" class="mui-input-clear" name="" required placeholder="免费接收订单确认短信" />
+						</div>
+					
+						<div class="mui-input-row mui-input-row_text">
+
+							<textarea name="text" rows="100" required placeholder="备注信息"></textarea>
+
+						</div>
+					
+
+</div>
+				
+
+						<button type="button" class="mui-btn leave_btn">提交</button>	
+						<p class="order_tips">在线预订后，客服会与您电话联系，请注意接听</p>
+
+					</form>
+
+
+		
+					
+				</div>
+				
+					<div id="popoverNotice" class="mui-popover popoverNotice">
+	
+		
+	 
+
+
+
+	
+	
+</div>			
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+        	<ul class="mui-table-view">
+						<li class="mui-table-view-cell"><a href="index.html">首页</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="list_pro.html">景区门票</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="list_pro.html">热门景点</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="list_pro.html">特惠活动</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="list_news.html">帮助中心</a>
+						</li>
+						<li class="mui-table-view-cell"><a href="about.html">联系我们</a>
+						</li>
+
+					</ul>
+
+		</div>				
+		
+	
+	<script src="js/mui.min.js"></script>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script src="js/bafanglu.js"></script>
+	<script type="text/javascript">
+		//
+		$(function(){
+			var result=$('#result');
+			var price=210;
+			var $user_num=$('#user_num');
+			$('.mui-btn-numbox-plus,.mui-btn-numbox-minus').on('tap',function(){
+				var num= $user_num.val()-0;
+				
+				result.text(num*price);
+			
+			});
+			
+});
+	</script>
+	
+	</body>
+
+</html>

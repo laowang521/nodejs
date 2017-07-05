@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>景点详情</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body ontouchstar="">
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+
+		<!-- 主页面标题 -->
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="index.html">
+				<span class="mui-icon iconfont icon-shouye-xianxing"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="list_pro.html">
+				<span class="mui-icon iconfont icon--guoji-xianxing"></span>
+				<span class="mui-tab-label">景点</span>
+			</a>
+
+			<a class="mui-tab-item" href="contact.html">
+				<span class="mui-icon  iconfont icon-dianhua-xianxingyuankuang"></span>
+				<span class="mui-tab-label">咨询</span>
+			</a>
+		</nav>
+
+		<!-- 主页面内容容器 -->
+		<div class="mui-content article_pro">
+
+			<!-- 主界面具体展示内容 -->
+
+			<div class="topImg">
+				<div class="article_pro_nav">
+					<a class="mui-pull-left mui-icon mui-icon-arrowleft back" href="javascript:history.go(-1);"></a>
+
+					<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#topPopover"></a>
+
+				</div>
+
+				<img src="images/banner1.jpg" />
+
+				<div class="text">郑州方特欢乐园</div>
+			</div>
+
+			<div id="slider_order" class="mui-slider order-nav">
+				<div class="fixNav">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item mui-active" href="#item1mobile">门票预订</a>
+					<a class="mui-control-item" href="#item2mobile">景点详情</a>
+					<a class="mui-control-item" href="#item3mobile">周边景点</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				</div>
+				
+				<div class="mui-slider-group itemShow">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+
+						<div class="ticket">
+							<div class="ticket_top"><span class="mui-icon iconfont icon-chengrenpiao"></span><span class="type">成人票</span><span class="price">￥210起</span><span class="mui-icon mui-icon-arrowdown ticketBtn listNavActive"></span></div>
+							<div class="ticket_content">
+								<div class="mui-row">
+									<div class="mui-col-sm-8 mui-col-xs-8">
+										<span class="mui-ellipsis-2 name">郑州方特欢乐园成人票</span>
+										<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span></h6>
+
+										<p class="price">￥210</p>
+
+									</div>
+									<div class="mui-col-sm-4 mui-col-xs-4">
+
+										<a href="order.html" class="toBooking">
+											<span class="top">预订</span>
+											<p class="bottom">线下支付</p>
+										</a>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="ticket">
+							<div class="ticket_top"><span class="mui-icon iconfont icon-icon4"></span><span class="type">儿童票</span><span class="price">￥210起</span><span class="mui-icon mui-icon-arrowdown ticketBtn listNavActive"></span></div>
+							<div class="ticket_content">
+								<div class="mui-row">
+									<div class="mui-col-sm-8 mui-col-xs-8">
+										<span class="mui-ellipsis-2 name">郑州方特欢乐园成人票</span>
+										<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span></h6>
+
+										<p class="price">￥210</p>
+
+									</div>
+									<div class="mui-col-sm-4 mui-col-xs-4">
+
+										<a href="order.html" class="toBooking">
+											<span class="top">预订</span>
+											<p class="bottom">线下支付</p>
+										</a>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content scenicDetail">
+
+						<div class="scenicDetail_item scenicLocation">
+							<div class="top"><span class="mui-icon mui-icon-location"></span>河南省郑州市中牟县郑开大道与人文路交汇处向南</div>
+						</div>
+
+						<div class="scenicDetail_item scenicLocation">
+							<div class="top"><span class="mui-icon iconfont icon-time"></span>开放时间</div>
+							<div class="content">
+								<p>开放时间 周六～周日：09:00～18:00开放； 周一～周五：09:30～17:30开放；
+								</p>
+							</div>
+
+						</div>
+
+						<div class="scenicDetail_item scenicLocation">
+							<div class="top"><span class="mui-icon mui-icon-info"></span>门票信息</div>
+							<div class="content">
+								<p>免费政策 身高1.2米以下的儿童及70周岁以上的老人（凭有效身份证件）免票，免票人士须有持全价票成人陪同，每名持票成人限带1名免票人士 特惠政策 儿童票适用范围：1.2米≤身高＜1.5米的儿童
+								</p>
+							</div>
+
+						</div>
+
+						<div class="scenicDetail_item scenicLocation">
+							<div class="top"><span class="mui-icon iconfont icon-ziliao"></span>景点资料</div>
+							<div class="content">
+								<p>灾难降临未来城市！恐龙试验室里恐龙基因变异，一夜之间恐龙大量繁殖并逃出试验室，破坏城市、伤害人类。在空中警察带领下，人们开始了前途未卜的生死大逃亡。目前世界上最先进的大型恐龙复活灾难体验项目——恐龙危机，让您经历一场不容错过的惊险之旅。</p>
+								<p>《方特城堡》</p>
+								<p>方特城堡是大型儿童参与式体验项目。在这儿，您不仅能现场观看生动有趣的手偶剧表演，还能够亲身感受虚拟仿真、多媒体互动等妙趣横生的游艺技术。 淘气堡、小滑梯、充气屋、卡通秀等玩乐设施装点成的童梦天地，更深得小朋友和家长们的喜爱。</p>
+							</div>
+
+						</div>
+
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="Scenic">
+
+							<ul class="mui-table-view">
+
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+								<li class="mui-table-view-cell mui-media">
+									<a href="#">
+
+										<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+										<div class="mui-media-body">
+											<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+											<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+											<div class="level">5星级</div>
+											<div class="price">￥110起</div>
+
+										</div>
+									</a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_pro.html">景区门票</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_pro.html">热门景点</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_pro.html">特惠活动</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_news.html">帮助中心</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="about.html">联系我们</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/zepto.min.js"></script>
+        <script src="js/bafanglu.js"></script>
+
+
+		<script>
+			$(function() {
+				//隐藏切换
+				$('.ticket_top').on('tap', function() {
+
+					var $ticket_content = $(this).siblings('.ticket_content');
+					var $ticket_btn = $(this).children('.ticketBtn');
+
+					if($ticket_content.css('display') === 'block') {
+						$ticket_btn.removeClass('listNavActive');
+
+						$ticket_content.hide();
+
+					} else {
+						$ticket_btn.addClass('listNavActive');
+						$ticket_content.show();
+
+					}
+
+				});
+				
+				
+	
+//滚动中 固定nav
+    var navTop = $('.fixNav').offset().top;
+
+    $(window).on('scroll', function() {
+
+	    var scrollTop = $(window).scrollTop();
+	
+	    if(scrollTop >= navTop) {
+	
+		    $('.fixNav').addClass('fixed');
+	
+	      } else {
+	
+		    $('.fixNav').removeClass('fixed');
+	    }
+
+});
+
+
+//产品页高度切换
+//设置初始高度为第0个选项卡的高度
+  var $ele=$('.mui-control-content','#slider_order');
+   $('.itemShow').height($ele.eq(0).height());
+//滑动时动态改变
+$('#slider_order').on({slide:slideH});
+
+
+function slideH(e) {
+var nowIndex=e.detail.slideNumber;
+var now_height =$ele.eq(nowIndex).height();
+	$('.itemShow.mui-slider-group').height(now_height);
+
+
+};
+
+
+
+
+
+
+})</script>
+
+	</body>
+
+</html>

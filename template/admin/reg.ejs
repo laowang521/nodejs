@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%=title%></title>
+    <style>
+.title{text-align: center;margin-top:100px;}
+    .reg-dialog{
+         height:100px;
+         width:500px;
+         margin:0 auto;
+         padding:100px 0;
+         background:#eee;
+         text-align: center;
+      }
+      .msg{color:#f00;}
+      </style>
+      <script src="/js/jquery1.91.min.js"></script>
+      <script>
+$(function(){
+   $('.login_btn').on('click',function(){
+    console.log('a');
+   
+
+         $.ajax({
+              url:'/admin/reg',
+              type:'post',
+              data:{  
+                   username:$('.reg-dialog').find('[name="username"]').val(),
+                   password:$('.reg-dialog').find('[name="password"]').val()
+
+              },
+              datatype:'json',
+                  success: function (str){
+
+              var json=eval('('+str+')');
+
+              if(json.ok){
+               $('.msg').text('恭喜'+json.msg+'正在为您跳转');
+                 window.location.href ="/admin";
+              }else{
+                $('.msg').text('*'+json.msg);
+              }
+            },
+
+
+
+           })
+
+    })
+          
+});
+      </script>
+  </head>
+  <body>
+  <h1 class="title">nodejs后台，请注册</h1>
+    <div class="reg-dialog">
+
+     
+       
+        用户：<input type="text" name="username"/><br><br>
+        密码：<input type="password" name="password"/>
+        <p class="msg">&nbsp;</p>
+        <button class="login_btn">注册</button>
+        <a href="/admin/login">登录</a>
+     
+    </div>
+  </body>
+</html>

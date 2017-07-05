@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>景区列表</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body ontouchstar="">
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+
+		<!-- 主页面标题 -->
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-pull-left mui-icon mui-icon-arrowleft back" href="javascript:history.go(-1);"></a>
+			<h1 class="mui-title">景区列表</h1>
+			<a class="mui-icon mui-action-menu mui-icon-bars mui-pull-right" href="#topPopover"></a>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="index.html">
+				<span class="mui-icon iconfont icon-shouye-xianxing"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="list_pro.html">
+				<span class="mui-icon iconfont icon--guoji-xianxing"></span>
+				<span class="mui-tab-label">景点</span>
+			</a>
+
+			<a class="mui-tab-item" href="contact.html">
+				<span class="mui-icon  iconfont icon-dianhua-xianxingyuankuang"></span>
+				<span class="mui-tab-label">咨询</span>
+			</a>
+		</nav>
+		<div class="mui-bar list_nav">
+			<div class="mui-row nav_btn">
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<a><span class="txt">所在地</span><span class="mui-icon mui-icon-arrowdown"></span></a>
+
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<a><span class="txt">主题</span><span class="mui-icon mui-icon-arrowdown"></span></a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<a style="border:0"><span class="txt">价格</span><span class="mui-icon mui-icon-arrowdown"></span></a>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<a style="border:0"><span class="txt">星级</span><span class="mui-icon mui-icon-arrowdown"></span></a>
+				</div>
+
+			</div>
+			<div class="listNav_popover">
+
+				<ul class="mui-table-view  listNav_pop_region">
+					<div class="mui-scroll-wrapper">
+						<div class="scroll">
+
+							<li class="mui-table-view-cell active">
+								<a href="">不限</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">河南省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">北京市</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">天津市</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">重庆市</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="">黑龙江省</a>
+							</li>
+
+							<li class="mui-table-view-cell">
+								<a href="#">吉林省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">辽宁省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">山东省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">江苏省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">安徽省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">浙江省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">福建省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">上海市</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">江西省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">广东省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">广西省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">海南省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">湖北省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">湖南省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">河北省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">山西省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">内蒙古</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">宁夏</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">新疆</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">青海省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">陕西省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">甘肃省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">四川省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">云南省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">贵州省</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">西藏</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">香港</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">澳门</a>
+							</li>
+							<li class="mui-table-view-cell">
+								<a href="#">台湾省</a>
+							</li>
+
+						</div>
+					</div>
+				</ul>
+
+				<ul class="mui-table-view listNav_pop_custom">
+
+					<a href="">水上乐园</a>
+
+					<a href="#">漂流</a>
+
+					<a href="#">演绎演出</a>
+
+					<a href="#">森林公园</a>
+
+					<a href="#">温泉</a>
+					<a href="#">室内</a>
+					<a href="#">滑雪</a>
+					<a href="#">人文景观</a>
+					<a href="#">儿童</a>
+					<a href="#">名胜古迹</a>
+				</ul>
+
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell active">
+						<a href="">全部</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">￥0-￥50</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">￥50-￥100</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">￥100-￥200</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">￥200以上</a>
+					</li>
+
+				</ul>
+	
+	<ul class="mui-table-view">
+					<li class="mui-table-view-cell active">
+						<a href="">全部</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">AAAAA</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">AAAA</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">AAA</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">AAA</a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="#">AA及以下</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="index.html">
+				<span class="mui-icon iconfont icon-shouye-xianxing"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="list_pro.html">
+				<span class="mui-icon iconfont icon--guoji-xianxing"></span>
+				<span class="mui-tab-label">景点</span>
+			</a>
+
+			<a class="mui-tab-item" href="about.html">
+				<span class="mui-icon  iconfont icon-dianhua-xianxingyuankuang"></span>
+				<span class="mui-tab-label">咨询</span>
+			</a>
+		</nav>
+		<!-- 主页面内容容器 -->
+		<div class="mui-content mui-scroll-wrapper list">
+			<div class="mui-scroll">
+				<!-- 主界面具体展示内容 -->
+
+				<div class="Scenic">
+
+					<ul class="mui-table-view">
+
+						<li class="mui-table-view-cell mui-media">
+							<a href="article_pro.html">
+
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+									<div class="level">5星级</div>
+									<div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="article_pro.html">
+
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+									<div class="level">5星级</div>
+									<div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="article_pro.html">
+
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+									<div class="level">5星级</div>
+									<div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="article_pro.html">
+
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+									<div class="level">5星级</div>
+									<div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="article_pro.html">
+
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+									<div class="level">5星级</div>
+									<div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="article_pro.html">
+
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+
+									<div class="level">5星级</div>
+									<div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<div class="page_wrap">
+					<div class="page">
+
+						<a href="#">首页</a>
+						<span class="nolink">&lt;</span>
+						<span class="cur">1</span>
+						<a href="#">2</a>
+						<a href="#">&gt;</a>
+						<a href="#">尾页</a>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+
+			</div>
+		</div>
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="index.html">首页</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_pro.html">景区门票</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_pro.html">热门景点</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_pro.html">特惠活动</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="list_news.html">帮助中心</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="about.html">联系我们</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/bafanglu.js"></script>
+		<script src="js/zepto.min.js"></script>
+
+		<script>
+			$(function() {
+
+				var $popover = $('.listNav_popover').find('.mui-table-view');
+				var mask = mui.createMask(maskClick); //callback为用户点击蒙版时自动执行的回调；
+
+				function maskClick() {
+					$('.nav_btn a').removeClass('listNavActive');
+					$popover.hide();
+
+				};
+
+				$('.nav_btn').on('tap', 'a', function() {
+
+					var index = $('.nav_btn a').index(this);
+
+					if(!$(this).hasClass('listNavActive')) {
+						$popover.hide();
+						$('.nav_btn').find('a').removeClass('listNavActive');
+						$(this).addClass('listNavActive');
+						$popover.eq(index).show();
+						mask.show(); //显示遮罩
+					} else {
+
+						$(this).removeClass('listNavActive');
+						$popover.hide();
+						mask.close(); //关闭遮罩
+					}
+
+				});
+
+			});
+		</script>
+
+	</body>
+
+</html>

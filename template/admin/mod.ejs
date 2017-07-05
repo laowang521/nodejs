@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<form action="?" method="post" enctype="multipart/form-data" >
+
+<div style="margin:100px auto;height:800px;width:1200px;">
+
+<h1>文章修改页面</h1>	
+<input type="hidden" name="id" value="<%=mod_data.ID%>"/>
+
+标题：<input type="text" name="title" value="<%=mod_data.title%>
+"/><br><br>
+
+
+内容： <textarea name="txt" id="" cols="30" rows="10"><%=mod_data.txt%></textarea><br><br>
+图片：<img height="40" width="40" src="/upload/<%=mod_data.href%>" alt=""><input type="file" name="href"  accept="image/*" /><br><br>
+<input type="submit" value="提交"/> <a href="javascript:window.history.go(-1);">取消</a>
+</div>
+
+
+</form>
+</body>
+</html>

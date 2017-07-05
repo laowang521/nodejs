@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<link rel="stylesheet" href="/css/admin.css" />
+<script src="/js/jquery1.91.min.js"></script>
+<script>
+$(function(){
+  var revise=$('.revise');
+    
+$('.revise_btn').on('click',function(){
+
+
+
+
+
+              $.ajax({
+                  url:'/admin/',
+                  type:'post',
+                  data:{
+                       admin_id:revise.find('[name="admin_id"]').val(),
+                       oldPw:revise.find('[name="oldPw"]').val(),
+                       repeatPw:revise.find('[name="repeatPw"]').val(),
+                       newPw:revise.find('[name="newPw"]').val()
+
+                  },
+                  datatype:'json',
+                  success:function(str){
+                            var json=eval('('+str+')');
+                                if(json.ok){
+                                   $('.msg').text('恭喜'+json.msg);
+                                  window.location.href ="/admin";
+                                }else{
+                                  console.log('ssss');
+                                    $('.msg').text('失败'+json.msg);
+                             
+
+                                }
+                  }    
+
+
+              })
+
+
+
+
+
+  })
+
+
+});
+
+</script>
+  <body>
+
+ 
+    <div class="page">
+
+      <% include components/top.inc.ejs %>
+      <div class="w">
+      <div class="content-wrap">
+      <br>
+      <p><span class="now_user"><%=userName%></span>同志，欢迎您.<%if(isAdmin){%>
+<a href="?act=manage">管理用户</a><%}%>&nbsp;<a href="?act=revise">修改密码</a>&nbsp;<a href="/admin/login">退出当前账号</a></p>
+
+      <br>
+
+      <% if(typeof act!='undefined'){ %>
+
+      <%if(act=="revise"){%>
+
+   <div class=="revise">
+<input type="hidden" name="admin_id" value="<%=userID%>" />
+       原 密 码：<input type="password" name="oldPw"/><br><br>
+       新 密 码：<input type="password" name="newPw"/><br><br>
+       再次输入：<input type="password" name="repeatPw"/><br>
+       <p class="msg">&nbsp;</p>
+   <span class="revise_btn">更改</span>&nbsp;<a href="/admin">不改</a>
+
+      </div>
+
+      <% }else if(act=="manage") {%>
+         这是用户管理部分
+
+
+      <% } %>
+
+<% } %>
+
+      </div>
+      </div>
+    </div>
+  
+  </body>
+</html>

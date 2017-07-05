@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>八方鹿旅游网-手机版</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+			
+	</head>
+
+
+			
+	
+
+	<body ontouchstar="">
+		<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+
+		<!-- 主页面标题 -->
+		<header class="mui-bar mui-bar-nav index">
+        	<div class="mui-title"><img src="images/logo.png" /></div>
+			<a class="mui-icon  mui-icon-phone mui-pull-right" href="tel:9999999"></a>
+		</header>
+		
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="index.html">
+				<span class="mui-icon iconfont icon-shouye-xianxing"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="list_pro.html">
+				<span class="mui-icon iconfont icon--guoji-xianxing"></span>
+				<span class="mui-tab-label">景点</span>
+			</a>
+			
+					<a class="mui-tab-item" href="about.html">
+				<span class="mui-icon  iconfont icon-dianhua-xianxingyuankuang"></span>
+				<span class="mui-tab-label">咨询</span>
+			</a>
+		</nav>
+
+		<!-- 主页面内容容器 -->
+
+		<div class="mui-content">
+		
+				<!-- 主界面具体展示内容 -->
+
+				<div id="slider" class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="images/banner1.jpg">
+
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/banner1.jpg">
+
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/banner1.jpg">
+
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="images/banner1.jpg">
+
+							</a>
+						</div>
+
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="images/banner1.jpg">
+
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator1 mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+
+					</div>
+				</div>
+
+				<!-----Notice------>
+
+
+
+				<div id="notice" class="mui-slider notice" >
+					
+					<div class="notice_icon"><span class="mui-icon iconfont icon-laba"></span></div>
+					<div class="mui-slider-group mui-slider-loop">
+						<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								
+<p class="mui-slider-title"><span class="mui-badge mui-badge-danger">热门</span>端午郑州方特旅游特惠！！</p>
+							</a>
+						</div>
+						<!-- 第一张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<p class="mui-slider-title">端午郑州方特旅游特惠！！</p>
+								
+
+							</a>
+						</div>
+						<!-- 第二张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<p class="mui-slider-title">方特门票60元起</p>
+								
+							</a>
+						</div>
+						<!-- 第三张 -->
+						<div class="mui-slider-item">
+							<a href="#">
+								<p class="mui-slider-title"><span class="mui-badge mui-badge-danger">热门</span>端午郑州方特旅游特惠！！</p>
+								
+
+							</a>
+						</div>
+
+						<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<p class="mui-slider-title">河南十大旅游景点！！</p>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+<!---------search----------->	
+					<form class="mui-input-group search">
+					<div class="mui-input-row">
+						<input type="text" class="mui-input-clear search_input" name="" placeholder="目的地/景点/关键字" />
+						<label for="">
+									<button type="button" class="search_btn"><span class="mui-icon mui-icon-search"></span></button>
+									
+								</label>
+
+					</div>
+
+				</form>
+
+
+				<div class="service">
+					<!--<div class="itemTitle_wrap">
+	<div class="itemTitle">服务项目</div>
+	</div>-->
+					<div class="mui-row items">
+						<div class="mui-col-sm-4 mui-col-xs-4">
+							<a href="list_pro.html">
+								<div class="icon item1"><span class="mui-icon iconfont icon-ic_confirmation_number_px"></span></div>
+								<p>景区门票</p>
+							</a>
+						</div>
+						<div class="mui-col-sm-4 mui-col-xs-4">
+							<a href="list_pro.html">
+								<div class="icon item2"><span class="mui-icon iconfont icon-jingdian1"></span></div>
+								<p>推荐景区</p>
+							</a>
+						</div>
+						<div class="mui-col-sm-4 mui-col-xs-4">
+							<a href="list_pro.html">
+								<div class="icon item3"><span class="mui-icon iconfont icon-jingdian"></span></div>
+								<p>免费景点</p>
+							</a>
+						</div>
+						<div class="mui-col-sm-4 mui-col-xs-4">
+							<a href="list_news.html">
+								<div class="icon item4"><span class="mui-icon iconfont icon-huodong"></span></div>
+								<p>热门活动</p>
+							</a>
+						</div>
+						<div class="mui-col-sm-4 mui-col-xs-4">
+							<a href="list_news.html">
+								<div class="icon item5"><span class="mui-icon iconfont icon-icon-test"></span></div>
+								<p>旅游指南</p>
+							</a>
+						</div>
+						<div class="mui-col-sm-4 mui-col-xs-4">
+							<a href="list_pro.html">
+								<div class="icon item6"><span class="mui-icon iconfont icon-huaxue"></span></div>
+								<p>西安滑雪场</p>
+							</a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="Scenic">
+					<div class="itemTitle_wrap">
+						<div class="itemTitle"><span>推荐景区</span>
+							<a href="list_car.html" class="mui-pull-right mui-icon mui-icon-arrowright"></a>
+						</div>
+					</div>
+					<ul class="mui-table-view">
+
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">龙门石窟</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">名胜古迹</span><span class="time">一天</span></h6>
+									
+
+									<div class="level">5星级</div><div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+					<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+									
+
+									<div class="level">5星级</div><div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+					<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+									
+
+									<div class="level">5星级</div><div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+					
+					</ul>
+
+				</div>
+
+				<a class="ad" href="#">
+					<img src="images/ad1.jpg" />
+				</a>
+
+				<div class="Scenic">
+					<div class="itemTitle_wrap">
+						<div class="itemTitle"><span>热门景区</span>
+							<a href="list_car.html" class="mui-pull-right mui-icon mui-icon-arrowright"></a>
+						</div>
+					</div>
+						<ul class="mui-table-view">
+
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+									
+
+									<div class="level">5星级</div><div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+					<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+									
+
+									<div class="level">5星级</div><div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+					<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								
+								<img class="mui-media-object mui-pull-left" src="images/show1.jpg">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2">郑州方特欢乐园郑州方特欢乐园母亲节女性半价,郑州方特欢乐园母亲节女性半价</h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye">欢乐园</span><span class="time">半天</span></h6>
+									
+
+									<div class="level">5星级</div><div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+					
+					</ul>
+
+				</div>
+
+				<a class="ad" href="">
+					<img src="images/ad2.jpg" />
+				</a>
+
+				<div class="Scenic" id="app">
+					<div class="itemTitle_wrap">
+						<div class="itemTitle"><span>免费景区</span>
+							<a href="list_car.html" class="mui-pull-right mui-icon mui-icon-arrowright"></a>
+						</div>
+					</div>
+					<ul class="mui-table-view" v-for="item in banner" >
+                        
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								
+								<img class="mui-media-object mui-pull-left" :src="'upload/'+item.href">
+								<div class="mui-media-body">
+									<h4 class="mui-h4 mui-ellipsis-2" v-text="item.title"></h4>
+									<h6 class="mui-ellipsis"><span class="tripTpye" v-text="item.txt"></span><span class="time">半天</span></h6>
+									
+
+									<div class="level">5星级</div><div class="price">￥110起</div>
+
+								</div>
+							</a>
+						</li>
+	
+		
+					
+					</ul>
+
+				</div>
+
+				<div class="news">
+
+					<div class="itemTitle_wrap">
+						<div class="itemTitle"><span>订票指南</span>
+							<a href="list_news.html" class="mui-pull-right mui-icon mui-icon-arrowright"></a>
+						</div>
+
+					</div>
+
+					<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed list_news">
+						<li class="mui-table-view-cell">
+							<div class="mui-table">
+								<div class="mui-table-cell">
+									<a href="#">
+										<h4 class="mui-ellipsis-2">如何预订门票？</h4>
+
+										<p class="mui-h6 mui-ellipsis">如何预订门票呢？</p>
+									</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="mui-table">
+								<div class="mui-table-cell">
+									<a href="#">
+										<h4 class="mui-ellipsis-2">如何预订门票？</h4>
+
+										<p class="mui-h6 mui-ellipsis">如何预订门票呢？</p>
+									</a>
+								</div>
+
+							</div>
+						</li>
+						<li class="mui-table-view-cell">
+							<div class="mui-table">
+								<div class="mui-table-cell">
+									<a href="#">
+										<h4 class="mui-ellipsis-2">如何预订门票？</h4>
+
+										<p class="mui-h6 mui-ellipsis">如何预订门票呢？</p>
+									</a>
+								</div>
+
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="makingCall">
+					<a href="tel:0371-56789390"><button type="button" class="mui-btn  call"><span class="mui-icon mui-icon-phone"></span>立即订票</button></a>
+				</div>
+
+				<div class="banquan">
+					<a href="//api.map.baidu.com/geocoder?location=34.802714,113.684019&coord_type=bd09ll&output=html&src=zishitou|mui target=_blank" class="map"><img src="images/map.jpg" /></a>
+					<p>服务热线：0371-XXXXXXXX</p>
+					<p>Copyright©2012-2017八方鹿旅游网版权所有</p>
+					<p>
+						<a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">豫ICP备10012360号</a>
+					</p>
+
+				</div>
+
+		
+		</div>
+
+	<script src="js/mui.min.js"></script> 
+
+		<script src="js/bafanglu.js"></script>
+		
+<script src="js/vue2.min.js"></script>
+<script src="js/vue-resource.min.js"></script>
+    <script type="text/javascript">
+    //Model
+
+    //ViewModel
+    var vue = new Vue({
+        el: '#app',
+        data: {
+          banner:[]
+
+
+        },
+
+        mounted: function () {
+		this.$nextTick(function () {
+		
+			this.queryBanner();
+		});
+	},
+	methods: {
+		queryBanner: function () {
+			var _this = this;
+			
+		
+			this.$http.get("/getbannerdata").then(function (res) {
+				
+					_this.banner = res.data;
+					console.log(_this.banner);
+					
+			})
+		}
+
+}
+
+    });
+   
+    </script>
+		
+	</body>
+
+</html>

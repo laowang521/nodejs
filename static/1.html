@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>111</title>
+</head>
+<script src="js/vue2.min.js"></script>
+<body>
+
+<div id="app">
+        <h1>姓名：{{ Name }}</h1>
+        <h1>年龄：{{ Age }}</h1>
+        <h1>学校：{{ School }}</h1>
+    </div>
+
+
+    <script type="text/javascript">
+    //Model
+    var data = {
+        Name: '小明',
+        Age: 18,
+        School:'光明小学',
+    }
+
+    //ViewModel
+    var vue = new Vue({
+        el: '#app',
+        data: data,
+    });
+   
+    </script>
+
+
+
+
+</body>
+</html>
